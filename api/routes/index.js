@@ -13,7 +13,6 @@ exports.word = {
             reply({
                 alphabet: config.alphabet,
                 blocks: new Array(gameWord.length),
-                guesses: [],
                 maxAttempts: config.maxAttempts,
                 miss: 0,
                 word: gameWord
