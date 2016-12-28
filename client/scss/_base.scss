@@ -13,7 +13,6 @@ body {
     background: #f0f0f0;
     color: rgba(0,0,0,.87);
     font-family: 'Roboto', sans-serif;
-    font-size: .875rem;
     height: auto;
     margin: 0;
     min-height: 100%;
@@ -70,6 +69,7 @@ ul {
     justify-content: space-between;
 
     .miss-count {
+        font-size: .875rem;
         line-height: 4rem;
 
         span {
@@ -142,27 +142,23 @@ ul {
         }
     }
 
-    .word-list__blocks {
+    .alphabet-list__blocks {
         margin-top: 0.25rem;
 
-        ul {
+        li {
+            display: inline-block;
+            list-style-type: none;
 
-            li {
-                display: inline-block;
-                list-style-type: none;
-                margin-left: 1em;
-
-                &:first-child {
-                    margin-left: 0;
-                }
+            &:first-child {
+                margin-left: 0;
             }
-            span {
-                display: block;
-                height: 32px;
-                line-height: 2;
-                text-align: center;
-                width: 32px;
-            }
+        }
+        span {
+            display: block;
+            height: 32px;
+            line-height: 2;
+            text-align: center;
+            width: 32px;
         }
     }
 }

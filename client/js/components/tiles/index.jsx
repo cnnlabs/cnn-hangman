@@ -14,9 +14,9 @@ const mapStateToProps = ({blocks}) => ({
 const Tiles = (props) => {
     return (
         <Blocks>
-            <ul className='flex word-list__blocks'>
+            <ul className='flex alphabet-list__blocks'>
                 {props.blocks.map((item, i) =>
-                    <li key={i} className='box word-list__blocks--item'>
+                    <li key={i} className='box alphabet-list__blocks--item'>
                         {item === null ? '\u00A0' : item}
                     </li>
                 )}
